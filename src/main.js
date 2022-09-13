@@ -1,5 +1,5 @@
 "use strict";
-import { LoadScene } from "./scenes/LoadScene.js";
+import { LoadScene } from "./scenes/LoadScene";
 var game = new Phaser.Game({
     width: 800,
     height: 600,
