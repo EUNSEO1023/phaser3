@@ -383,16 +383,13 @@ function (_super) {
 exports.LoadScene = LoadScene;
 },{"../CST":"src/CST.js","./MenuScene":"src/scenes/MenuScene.js"}],"src/main.js":[function(require,module,exports) {
 "use strict";
-/**@type {import("../typings/phaser")} */
 
-exports.__esModule = true;
-
-var LoadScene_1 = require("./scenes/LoadScene");
+var _LoadScene = require("./scenes/LoadScene");
 
 var game = new Phaser.Game({
   width: 800,
   height: 600,
-  scene: [LoadScene_1.LoadScene],
+  scene: [_LoadScene.LoadScene],
   render: {
     pixelArt: true
   }
@@ -425,7 +422,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "59112" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "61942" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
